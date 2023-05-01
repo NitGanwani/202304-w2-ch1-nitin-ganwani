@@ -1,5 +1,8 @@
 @use "reset";
 @use "global";
+@import "responsive";
+
+$primary-color: hsl(215, 51%, 70%);
 
 .web-container {
   background-color: #0d1a2d;
@@ -14,14 +17,92 @@
     width: 85%;
     height: 85%;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
     img {
       border-radius: 16px;
-      margin-top: 16px;
+      margin-top: 24px;
+    }
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+
+    .line {
+      padding-top: 20px;
+      height: 5%;
+      border-bottom: 1.4px solid hsl(215, 32%, 27%);
+    }
+
+    .avatar {
       display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+
+      h3 {
+        padding: 24px 0 0 12px;
+        color: $primary-color;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__title {
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding-bottom: 8px;
+    }
+
+    p {
+      color: $primary-color;
+      word-spacing: 4px;
+      line-height: 1.3;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4px;
+
+    .icon {
+      display: flex;
+      align-items: flex-end;
+
+      h2 {
+        color: hsl(178, 100%, 50%);
+      }
+    }
+
+    .time {
+      display: flex;
+      align-items: flex-end;
+
+      h3 {
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+
+    img {
+      padding-right: 8px;
     }
   }
 }
