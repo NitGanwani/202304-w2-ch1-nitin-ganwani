@@ -18,6 +18,10 @@ $primary-color: hsl(215, 51%, 70%);
     height: 85%;
     border-radius: 16px;
 
+    @include desktop {
+      width: 25%;
+    }
+
     img {
       border-radius: 16px;
       margin-top: 24px;
