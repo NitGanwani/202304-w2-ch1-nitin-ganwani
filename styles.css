@@ -179,9 +179,25 @@ html {
 .web-container__title h1 {
   color: hsl(0, 0%, 100%);
   font-size: 1.4rem;
+  padding-bottom: 8px;
 }
 .web-container__title p {
   color: hsl(215, 51%, 70%);
+}
+.web-container__info {
+  display: flex;
+  justify-content: space-between;
+}
+.web-container__info .icon {
+  display: flex;
+  align-items: flex-end;
+}
+.web-container__info .time {
+  display: flex;
+  align-items: flex-end;
+}
+.web-container__info img {
+  padding-right: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -37,10 +37,30 @@
     h1 {
       color: hsl(0, 0%, 100%);
       font-size: 1.4rem;
+      padding-bottom: 8px;
     }
 
     p {
       color: hsl(215, 51%, 70%);
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    .icon {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .time {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    img {
+      padding-right: 8px;
     }
   }
 }
