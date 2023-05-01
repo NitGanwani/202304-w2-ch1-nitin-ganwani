@@ -1,0 +1,27 @@
+@use "reset";
+@use "global";
+
+.web-container {
+  background-color: #0d1a2d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__component {
+    background-color: #15273f;
+    width: 85%;
+    height: 85%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      border-radius: 16px;
+      margin-top: 16px;
+      display: flex;
+    }
+  }
+}
