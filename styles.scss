@@ -14,14 +14,33 @@
     width: 85%;
     height: 85%;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
     img {
       border-radius: 16px;
       margin-top: 16px;
-      display: flex;
+    }
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  &__title {
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-size: 1.4rem;
+    }
+
+    p {
+      color: hsl(215, 51%, 70%);
     }
   }
 }

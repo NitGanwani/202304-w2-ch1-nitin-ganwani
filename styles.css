@@ -144,6 +144,10 @@ html {
   width: 100%;
 }
 
+html {
+  font-family: "Outfit", sans-serif;
+}
+
 .web-container {
   background-color: #0d1a2d;
   height: 100%;
@@ -157,14 +161,27 @@ html {
   width: 85%;
   height: 85%;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .web-container__component img {
   border-radius: 16px;
   margin-top: 16px;
+}
+.web-container__display {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-container__description {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.web-container__title h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+}
+.web-container__title p {
+  color: hsl(215, 51%, 70%);
 }
 
 /*# sourceMappingURL=styles.css.map */
