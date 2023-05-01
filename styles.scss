@@ -1,5 +1,8 @@
 @use "reset";
 @use "global";
+@import "responsive";
+
+$primary-color: hsl(215, 51%, 70%);
 
 .web-container {
   background-color: #0d1a2d;
@@ -37,6 +40,26 @@
       height: 5%;
       border-bottom: 1.4px solid hsl(215, 32%, 27%);
     }
+
+    .avatar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+
+      h3 {
+        padding: 24px 0 0 12px;
+        color: $primary-color;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
   }
 
   &__title {
@@ -48,7 +71,7 @@
     }
 
     p {
-      color: hsl(215, 51%, 70%);
+      color: $primary-color;
       word-spacing: 4px;
       line-height: 1.3;
     }
@@ -73,7 +96,7 @@
       align-items: flex-end;
 
       h3 {
-        color: hsl(215, 51%, 70%);
+        color: $primary-color;
         font-weight: 600;
       }
     }
